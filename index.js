@@ -136,14 +136,38 @@ var total = 0;
 
 //console.log(finances[0][1]);
 for(let i = 0;  i < finances.length; i++){
-  //Entering thr For loop Block
+  //Entering the for loop block
 
   //console.log(finances[i][1]);
   total = total + finances[i][1]
-//Leaving the fo loop
+//Leaving the for loop
 }
 
-console.log(`the total profit/losses: ${total}`)
+console.log(`Total: ${total}`)
+
+
+// calculating average change between finances
+
+function calculateAverageDifference(finances) {
+  let totalDifference = 0;
+
+  for (let i = 1; i < finances.length; i++) {
+    totalDifference += (finances[i - 1][1]);
+  }
+
+  // Calculate the average difference
+  let averageDifference = totalDifference / (finances.length - 1);
+
+  return averageDifference;
+}
+
+console.log(calculateAverageDifference(finances));
+
+
+
+
+
+
 
 
 
