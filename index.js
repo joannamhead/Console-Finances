@@ -127,3 +127,28 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+console.log(`Total months: ${finances.length}`);
+
+var total = 0;
+
+
+
+//console.log(finances[0][1]);
+for(let i = 0;  i < finances.length; i++){
+  //Entering thr For loop Block
+
+  //console.log(finances[i][1]);
+  total = total + finances[i][1]
+//Leaving the fo loop
+}
+
+console.log(`the total profit/losses: ${total}`)
+
+
+
+
+
+
+
+
